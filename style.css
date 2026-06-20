@@ -384,180 +384,6 @@ button {
     margin-bottom: 24px;
 }
 
-.filter-bar {
-    background-color: var(--bg-card);
-    border-radius: var(--border-radius-md);
-    padding: 20px 24px;
-    border: 1px solid var(--border-color);
-    box-shadow: var(--shadow-sm);
-    margin-bottom: 36px;
-}
-
-.filter-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr auto;
-    gap: 20px;
-    align-items: flex-end;
-}
-
-.filter-group {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.filter-label {
-    font-size: 12px;
-    font-weight: 600;
-    color: var(--text-dark);
-}
-
-.filter-input {
-    height: 44px;
-    padding: 0 14px;
-    border-radius: var(--border-radius-sm);
-    border: 1px solid var(--border-color);
-    background-color: var(--bg-light);
-    color: var(--text-dark);
-    font-size: 14px;
-    outline: none;
-    transition: var(--transition-fast);
-    width: 100%;
-}
-
-.filter-input:focus {
-    border-color: var(--navy-light);
-    background-color: #ffffff;
-}
-
-.filter-submit-btn {
-    background-color: var(--primary-blue);
-    color: #ffffff;
-    height: 44px;
-    padding: 0 32px;
-    border-radius: var(--border-radius-sm);
-    font-weight: 600;
-    font-size: 14px;
-    box-shadow: 0 4px 6px rgba(0, 62, 126, 0.15);
-}
-
-.filter-submit-btn:hover {
-    background-color: var(--primary-blue-hover);
-}
-
-.courts-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-}
-
-.court-card {
-    background-color: var(--bg-card);
-    border-radius: var(--border-radius-md);
-    overflow: hidden;
-    border: 1px solid var(--border-color);
-    box-shadow: var(--shadow-sm);
-    display: flex;
-    flex-direction: column;
-    transition: var(--transition-medium);
-}
-
-.court-card:hover {
-    transform: translateY(-6px);
-    box-shadow: var(--shadow-lg);
-}
-
-.court-card-img-wrapper {
-    height: 180px;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-.court-card-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.court-card-body {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-.court-card-title {
-    font-size: 18px;
-    margin-bottom: 6px;
-}
-
-.court-card-info-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 13px;
-    color: var(--text-muted);
-    margin-bottom: 8px;
-}
-
-.court-card-info-item svg {
-    width: 16px;
-    height: 16px;
-    color: var(--text-muted);
-}
-
-.court-status-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 12px;
-    font-weight: 600;
-    padding: 2px 8px;
-    border-radius: 9999px;
-    margin-top: 4px;
-    margin-bottom: 20px;
-    width: fit-content;
-}
-
-.status-disponivel {
-    background-color: var(--bg-success);
-    color: var(--text-success);
-}
-
-.status-ocupada {
-    background-color: var(--bg-danger);
-    color: var(--text-danger);
-}
-
-.status-dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: currentColor;
-}
-
-.court-book-btn {
-    background-color: var(--primary-green);
-    color: #ffffff;
-    width: 100%;
-    padding: 12px;
-    border-radius: var(--border-radius-sm);
-    font-weight: 600;
-    font-size: 14px;
-    text-align: center;
-    margin-top: auto;
-}
-
-.court-book-btn:hover {
-    background-color: var(--primary-green-hover);
-}
-
-.court-book-btn.disabled {
-    background-color: var(--bg-inactive);
-    color: var(--text-inactive);
-    cursor: not-allowed;
-}
 
 /* 6. Screen 3: Agendamento */
 .booking-layout {
@@ -1425,24 +1251,32 @@ button {
 
 
 /* 11. Responsive Media Queries */
-@media (max-width: 1024px) {
-    .courts-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
 @media (max-width: 768px) {
+    .brand-name {
+        font-size: 18px;
+    }
+
+    .brand-tagline {
+        font-size: 10px;
+    }
+
     .hero-section {
         flex-direction: column;
         text-align: center;
         padding: 40px 0;
+        gap: 32px;
     }
 
     .hero-content {
         max-width: 100%;
     }
 
+    .hero-title {
+        font-size: 32px;
+    }
+
     .hero-description {
+        font-size: 15px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1452,18 +1286,14 @@ button {
         height: 280px;
     }
 
+    /* Ajustar fade da imagem hero em modo retrato (mobile) */
+    .hero-image-overlay {
+        background: linear-gradient(180deg, rgba(248, 250, 252, 1) 0%, rgba(248, 250, 252, 0) 25%);
+    }
+
     .features-grid {
         grid-template-columns: 1fr;
         gap: 16px;
-    }
-
-    .filter-form {
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
-
-    .filter-submit-btn {
-        width: 100%;
     }
 
     .booking-layout {
@@ -1496,6 +1326,7 @@ button {
         display: flex;
     }
 
+    /* Menu de links mobile */
     .nav-links {
         display: none;
         flex-direction: column;
@@ -1504,7 +1335,7 @@ button {
         left: 0;
         width: 100%;
         background-color: var(--navy-dark);
-        padding: 16px 24px;
+        padding: 12px 24px;
         gap: 0;
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
         border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -1516,10 +1347,24 @@ button {
     }
 
     .nav-item {
-        padding: 12px 0;
+        padding: 14px 16px;
         width: 100%;
         display: block;
         border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        transition: var(--transition-fast);
+    }
+
+    .nav-item:hover {
+        background-color: rgba(255, 255, 255, 0.05);
+        padding-left: 20px;
+    }
+
+    .nav-item.active {
+        color: #ffffff;
+        font-weight: 700;
+        border-left: 4px solid var(--primary-green);
+        background-color: rgba(22, 163, 74, 0.1);
+        padding-left: 20px;
     }
 
     .nav-item::after {
@@ -1555,13 +1400,47 @@ button {
 }
 
 @media (max-width: 480px) {
-    .courts-grid {
-        grid-template-columns: 1fr;
+    .brand-tagline {
+        display: none; /* Esconde tagline para economizar espaço horizontal no mobile */
+    }
+
+    .brand-logo-svg {
+        width: 32px;
+        height: 32px;
+    }
+
+    .brand-name {
+        font-size: 16px;
+    }
+
+    .logout-btn-container span {
+        display: none; /* Esconde texto 'Sair' e exibe apenas o ícone no mobile super estreito */
+    }
+
+    .logout-btn-container {
+        padding: 8px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: var(--border-radius-sm);
     }
 
     .custom-table th,
     .custom-table td {
         padding: 10px 8px;
         font-size: 12px;
+    }
+
+    /* Reduzir paddings e margens do Login no mobile */
+    .login-card {
+        padding: 28px 20px;
+        max-width: 90%;
+    }
+
+    .login-logo-svg {
+        width: 44px;
+        height: 44px;
+    }
+
+    .login-welcome-title {
+        font-size: 18px;
     }
 }
