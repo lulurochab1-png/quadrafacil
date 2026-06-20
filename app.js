@@ -17,52 +17,10 @@
 // Você pode alterar, adicionar ou remover quadras aqui.
 const QUADRAS_PADRAO = [
     {
-        id: "quadra-1",
-        nome: "Quadra 1",
-        modalidade: "Futsal",
-        local: "Quadra Coberta",
-        status: "Disponível", // "Disponível" ou "Ocupada"
-        imagem: "https://images.unsplash.com/photo-1577223625816-7546f13df25d?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-        id: "quadra-2",
-        nome: "Quadra 2",
-        modalidade: "Vôlei",
-        local: "Quadra Externa",
+        id: "quadra-mariano",
+        nome: "Quadra Mariano",
         status: "Disponível",
-        imagem: "https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-        id: "quadra-3",
-        nome: "Quadra 3",
-        modalidade: "Basquete",
-        local: "Quadra Coberta",
-        status: "Ocupada",
-        imagem: "https://images.unsplash.com/photo-1544698310-74ea9d1c8258?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-        id: "quadra-4",
-        nome: "Quadra 4",
-        modalidade: "Futebol Society",
-        local: "Quadra Externa",
-        status: "Disponível",
-        imagem: "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-        id: "quadra-5",
-        nome: "Quadra 5",
-        modalidade: "Beach Tennis",
-        local: "Quadra de Areia",
-        status: "Disponível",
-        imagem: "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-        id: "quadra-6",
-        nome: "Quadra 6",
-        modalidade: "Poliesportiva",
-        local: "Quadra Externa",
-        status: "Disponível",
-        imagem: "https://images.unsplash.com/photo-1519766304817-4f37bda74a27?auto=format&fit=crop&q=80&w=800"
+        imagem: "imagem do mariano na primeira tela(1).png"
     }
 ];
 
@@ -70,8 +28,8 @@ const QUADRAS_PADRAO = [
 const RESERVAS_PADRAO = [
     {
         id: "reserva-1",
-        quadraId: "quadra-1",
-        quadraNome: "Quadra 1 - Futsal",
+        quadraId: "quadra-mariano",
+        quadraNome: "Quadra Mariano - Futsal",
         data: "2025-05-24", // Formato ISO AAAA-MM-DD
         horario: "19:00 - 20:00",
         nomeUsuario: "Thiago Willames",
@@ -81,8 +39,8 @@ const RESERVAS_PADRAO = [
     },
     {
         id: "reserva-2",
-        quadraId: "quadra-2",
-        quadraNome: "Quadra 2 - Vôlei",
+        quadraId: "quadra-mariano",
+        quadraNome: "Quadra Mariano - Vôlei",
         data: "2025-05-25",
         horario: "10:00 - 11:00",
         nomeUsuario: "Ruan Samuel",
@@ -92,8 +50,8 @@ const RESERVAS_PADRAO = [
     },
     {
         id: "reserva-3",
-        quadraId: "quadra-4",
-        quadraNome: "Quadra 4 - Society",
+        quadraId: "quadra-mariano",
+        quadraNome: "Quadra Mariano - Futsal",
         data: "2025-05-26",
         horario: "18:00 - 19:00",
         nomeUsuario: "João Santos",
@@ -103,8 +61,8 @@ const RESERVAS_PADRAO = [
     },
     {
         id: "reserva-4",
-        quadraId: "quadra-3",
-        quadraNome: "Quadra 3 - Basquete",
+        quadraId: "quadra-mariano",
+        quadraNome: "Quadra Mariano - Futsal",
         data: "2025-05-27",
         horario: "20:00 - 21:00",
         nomeUsuario: "Carlos Silva",
@@ -115,8 +73,8 @@ const RESERVAS_PADRAO = [
     // Reservas adicionais de "hoje" (24/05/2025) para bater com a tela 5 (Admin)
     {
         id: "reserva-5",
-        quadraId: "quadra-2",
-        quadraNome: "Quadra 2 - Vôlei",
+        quadraId: "quadra-mariano",
+        quadraNome: "Quadra Mariano - Vôlei",
         data: "2025-05-24",
         horario: "08:00 - 09:00",
         nomeUsuario: "Ruan Samuel",
@@ -126,8 +84,8 @@ const RESERVAS_PADRAO = [
     },
     {
         id: "reserva-6",
-        quadraId: "quadra-1",
-        quadraNome: "Quadra 1 - Futsal",
+        quadraId: "quadra-mariano",
+        quadraNome: "Quadra Mariano - Futsal",
         data: "2025-05-24",
         horario: "09:00 - 10:00",
         nomeUsuario: "Thiago Willames",
@@ -137,10 +95,10 @@ const RESERVAS_PADRAO = [
     },
     {
         id: "reserva-7",
-        quadraId: "quadra-3",
-        quadraNome: "Quadra 3 - Basquete",
+        quadraId: "quadra-mariano",
+        quadraNome: "Quadra Mariano - Futsal",
         data: "2025-05-24",
-        horario: "19:00 - 20:00",
+        horario: "17:00 - 18:00",
         nomeUsuario: "Carlos Silva",
         email: "carlos@email.com",
         telefone: "(81) 97777-7777",
@@ -148,8 +106,8 @@ const RESERVAS_PADRAO = [
     },
     {
         id: "reserva-8",
-        quadraId: "quadra-4",
-        quadraNome: "Quadra 4 - Society",
+        quadraId: "quadra-mariano",
+        quadraNome: "Quadra Mariano - Futsal",
         data: "2025-05-24",
         horario: "20:00 - 21:00",
         nomeUsuario: "João Santos",
@@ -172,10 +130,34 @@ class AppState {
     }
 
     initDatabase() {
-        if (!localStorage.getItem("quadras")) {
+        const existingQuadras = localStorage.getItem("quadras");
+        if (!existingQuadras || JSON.parse(existingQuadras).length !== 1 || JSON.parse(existingQuadras)[0].id !== "quadra-mariano") {
             localStorage.setItem("quadras", JSON.stringify(QUADRAS_PADRAO));
-        }
-        if (!localStorage.getItem("reservas")) {
+
+            // Limpar e migrar as reservas existentes para a Quadra Mariano
+            const existingReservas = localStorage.getItem("reservas");
+            if (existingReservas) {
+                try {
+                    let resList = JSON.parse(existingReservas);
+                    resList = resList.map(r => {
+                        let modality = "Futsal";
+                        if (r.quadraNome && r.quadraNome.toLowerCase().includes("vôlei")) {
+                            modality = "Vôlei";
+                        }
+                        return {
+                            ...r,
+                            quadraId: "quadra-mariano",
+                            quadraNome: `Quadra Mariano - ${modality}`
+                        };
+                    });
+                    localStorage.setItem("reservas", JSON.stringify(resList));
+                } catch (e) {
+                    localStorage.setItem("reservas", JSON.stringify(RESERVAS_PADRAO));
+                }
+            } else {
+                localStorage.setItem("reservas", JSON.stringify(RESERVAS_PADRAO));
+            }
+        } else if (!localStorage.getItem("reservas")) {
             localStorage.setItem("reservas", JSON.stringify(RESERVAS_PADRAO));
         }
     }
@@ -202,7 +184,6 @@ const state = new AppState();
 // 3. SELETORES DO DOM
 const sections = {
     home: document.getElementById("section-home"),
-    quadras: document.getElementById("section-quadras"),
     agendamento: document.getElementById("section-agendamento"),
     reservas: document.getElementById("section-reservas"),
     admin: document.getElementById("section-admin"),
@@ -296,9 +277,7 @@ function switchView(viewName) {
     });
 
     // Disparar renderizadores de tela específicos
-    if (viewName === "quadras") {
-        renderCourts();
-    } else if (viewName === "agendamento") {
+    if (viewName === "agendamento") {
         setupBookingForm();
     } else if (viewName === "reservas") {
         renderUserReservations();
@@ -315,7 +294,7 @@ navItems.forEach(item => {
     item.addEventListener("click", (e) => {
         e.preventDefault();
         const targetView = item.getAttribute("data-view");
-        
+
         if (targetView === "admin" && !state.isLoggedIn) {
             switchView("login");
         } else {
@@ -372,7 +351,7 @@ passwordToggle.addEventListener("click", () => {
 // Processar formulário de login (Suporta Admin e Cliente)
 loginForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    
+
     const emailVal = document.getElementById("login-email").value.trim().toLowerCase();
     const senhaVal = passwordInput.value;
 
@@ -384,17 +363,15 @@ loginForm.addEventListener("submit", (e) => {
     // Define role baseada no e-mail digitado
     if (emailVal === "admin@quadrafacil.com.br") {
         state.userRole = "admin";
-        showModal("success", "Login Administrador", "Bem-vindo ao Painel de Administração da QuadraFácil!", () => {
-            const nextView = state.redirectAfterLogin || "admin";
+        showModal("success", "Login Realizado", "Bem-vindo de volta, Administrador!", () => {
             state.redirectAfterLogin = null;
-            switchView(nextView);
+            switchView("home");
         });
     } else {
         state.userRole = "client";
-        showModal("success", "Login Cliente", `Bem-vindo de volta! Carregando as reservas de ${emailVal}...`, () => {
-            const nextView = state.redirectAfterLogin || "reservas";
+        showModal("success", "Login Realizado", `Bem-vindo de volta!`, () => {
             state.redirectAfterLogin = null;
-            switchView(nextView);
+            switchView("home");
         });
     }
 
@@ -404,123 +381,17 @@ loginForm.addEventListener("submit", (e) => {
 });
 
 // Botão voltar da tela de Login
-window.voltarTelaLogin = function() {
+window.voltarTelaLogin = function () {
     state.redirectAfterLogin = null;
     switchView(state.previousView || "home");
 };
 
 
-// --- TELA DE QUADRAS (FILTRAGEM E VISUALIZAÇÃO) ---
-const filterForm = document.getElementById("filter-form");
-
-filterForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    renderCourts();
-});
-
-function renderCourts() {
-    const courtsContainer = document.getElementById("courts-grid-container");
-    const modalidadeFiltro = document.getElementById("filter-modalidade").value;
-    const localFiltro = document.getElementById("filter-local").value;
-    // (O filtro de data pode ser usado para verificar se a quadra está livre ou ocupada naquele dia)
-    const dataFiltro = document.getElementById("filter-data").value;
-
-    const quadras = state.getQuadras();
-    const reservas = state.getReservas();
-
-    let html = "";
-    
-    // Filtrar quadras
-    const quadrasFiltradas = quadras.filter(q => {
-        const matchesModalidade = modalidadeFiltro === "Todas" || q.modalidade.toLowerCase() === modalidadeFiltro.toLowerCase();
-        const matchesLocal = localFiltro === "Todas" || q.local.toLowerCase() === localFiltro.toLowerCase();
-        return matchesModalidade && matchesLocal;
-    });
-
-    if (quadrasFiltradas.length === 0) {
-        courtsContainer.innerHTML = `
-            <div style="grid-column: 1/-1; text-align: center; padding: 40px 0; color: var(--text-muted);">
-                Nenhuma quadra encontrada com os filtros aplicados.
-            </div>
-        `;
-        return;
-    }
-
-    quadrasFiltradas.forEach(q => {
-        // Determinar status com base na data do filtro
-        let statusParaData = q.status;
-        if (dataFiltro) {
-            // Se houver uma reserva nessa data para essa quadra, marcamos como ocupada
-            const temReserva = reservas.some(r => r.quadraId === q.id && r.data === dataFiltro && r.status !== 'Cancelada');
-            if (temReserva) {
-                statusParaData = "Ocupada";
-            } else {
-                statusParaData = "Disponível";
-            }
-        }
-
-        const isDisponivel = statusParaData === "Disponível";
-        const badgeClass = isDisponivel ? "status-disponivel" : "status-ocupada";
-        const btnClass = isDisponivel ? "" : "disabled";
-        const btnText = isDisponivel ? "Reservar" : "Ocupada";
-        const clickAttr = isDisponivel ? `onclick="irParaAgendamento('${q.id}')"` : "";
-
-        html += `
-            <article class="court-card">
-                <div class="court-card-img-wrapper">
-                    <img class="court-card-img" src="${q.imagem}" alt="${q.nome}">
-                </div>
-                <div class="court-card-body">
-                    <h3 class="court-card-title">${q.nome}</h3>
-                    
-                    <div class="court-card-info-item">
-                        <!-- Icone de Raquete/Bola -->
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path d="M6 12A6 6 0 0 1 18 12"></path>
-                        </svg>
-                        <span>${q.modalidade}</span>
-                    </div>
-                    
-                    <div class="court-card-info-item">
-                        <!-- Icone de Localização/Marcação -->
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                            <circle cx="12" cy="10" r="3"></circle>
-                        </svg>
-                        <span>${q.local}</span>
-                    </div>
-
-                    <div class="court-status-badge ${badgeClass}">
-                        <span class="status-dot"></span>
-                        ${statusParaData}
-                    </div>
-
-                    <button class="court-book-btn ${btnClass}" ${clickAttr}>
-                        ${btnText}
-                    </button>
-                </div>
-            </article>
-        `;
-    });
-
-    courtsContainer.innerHTML = html;
-}
-
-// Redirecionamento da quadra escolhida para o agendamento
-window.irParaAgendamento = function(quadraId) {
-    switchView("agendamento");
-    const selectQuadra = document.getElementById("booking-quadra");
-    if (selectQuadra) {
-        selectQuadra.value = quadraId;
-        selectQuadra.dispatchEvent(new Event("change"));
-    }
-};
 
 
 // --- TELA DE AGENDAMENTO (FORMULÁRIO E RESUMO DINÂMICO) ---
 const bookingForm = document.getElementById("booking-form");
-const bookingQuadraSelect = document.getElementById("booking-quadra");
+const bookingModalidadeSelect = document.getElementById("booking-modalidade");
 const bookingDataInput = document.getElementById("booking-data");
 const bookingHorarioSelect = document.getElementById("booking-horario");
 const bookingNomeInput = document.getElementById("booking-nome");
@@ -536,20 +407,13 @@ const summaryTelefone = document.getElementById("summary-telefone");
 const summaryAlert = document.getElementById("summary-status-alert");
 
 function setupBookingForm() {
-    const quadras = state.getQuadras();
-    
-    // Popular o select de quadras
-    bookingQuadraSelect.innerHTML = quadras
-        .map(q => `<option value="${q.id}">${q.nome} - ${q.modalidade}</option>`)
-        .join("");
-
     // Configurar data inicial como "hoje" ou "24/05/2025" (combinando com as telas)
     if (!bookingDataInput.value) {
         bookingDataInput.value = "2025-05-24";
     }
 
     // Definir ouvintes para atualizar o resumo da reserva em tempo real
-    [bookingQuadraSelect, bookingDataInput, bookingHorarioSelect, bookingNomeInput, bookingTelefoneInput].forEach(elem => {
+    [bookingModalidadeSelect, bookingDataInput, bookingHorarioSelect, bookingNomeInput, bookingTelefoneInput].forEach(elem => {
         elem.addEventListener("input", updateBookingSummary);
         elem.addEventListener("change", updateBookingSummary);
     });
@@ -559,21 +423,17 @@ function setupBookingForm() {
 }
 
 function updateBookingSummary() {
-    const quadras = state.getQuadras();
     const reservas = state.getReservas();
-    
-    const quadraId = bookingQuadraSelect.value;
+
+    const modalidadeVal = bookingModalidadeSelect.value;
     const dataVal = bookingDataInput.value;
     const horarioVal = bookingHorarioSelect.value;
     const nomeVal = bookingNomeInput.value || "Thiago Willames"; // Fallback para ficar bonito no resumo
     const telefoneVal = bookingTelefoneInput.value || "(93) 991087098";
 
-    const quadraSelecionada = quadras.find(q => q.id === quadraId);
-
-    if (quadraSelecionada) {
-        summaryImg.src = quadraSelecionada.imagem;
-        summaryQuadra.textContent = `${quadraSelecionada.nome} - ${quadraSelecionada.modalidade}`;
-    }
+    // Sempre carregar a imagem do Mariano no resumo
+    summaryImg.src = "imagem do mariano na primeira tela(1).png";
+    summaryQuadra.textContent = `Quadra Mariano - ${modalidadeVal}`;
 
     // Formatar data para exibição PT-BR
     if (dataVal) {
@@ -591,9 +451,9 @@ function updateBookingSummary() {
     summaryNome.textContent = nomeVal;
     summaryTelefone.textContent = telefoneVal;
 
-    // Verificar disponibilidade em tempo real
-    const conflito = reservas.some(r => r.quadraId === quadraId && r.data === dataVal && r.horario === horarioVal && r.status !== 'Cancelada');
-    
+    // Verificar disponibilidade em tempo real: qualquer reserva ativa na mesma data e horário conflita
+    const conflito = reservas.some(r => r.data === dataVal && r.horario === horarioVal && r.status !== 'Cancelada' && r.status !== 'Rejeitada');
+
     if (conflito) {
         summaryAlert.className = "summary-status-alert not-available";
         summaryAlert.innerHTML = `
@@ -622,11 +482,10 @@ function updateBookingSummary() {
 // Submeter o agendamento
 bookingForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    
-    const quadras = state.getQuadras();
+
     const reservas = state.getReservas();
-    
-    const quadraId = bookingQuadraSelect.value;
+
+    const modalidadeVal = bookingModalidadeSelect.value;
     const dataVal = bookingDataInput.value;
     const horarioVal = bookingHorarioSelect.value;
     const nomeVal = bookingNomeInput.value;
@@ -637,19 +496,17 @@ bookingForm.addEventListener("submit", (e) => {
         return;
     }
 
-    const quadraSelecionada = quadras.find(q => q.id === quadraId);
-
-    // Nova reserva
+    // Nova reserva para a única quadra: Quadra Mariano
     const novaReserva = {
         id: "reserva-" + Date.now(),
-        quadraId: quadraId,
-        quadraNome: `${quadraSelecionada.nome} - ${quadraSelecionada.modalidade}`,
+        quadraId: "quadra-mariano",
+        quadraNome: `Quadra Mariano - ${modalidadeVal}`,
         data: dataVal,
         horario: horarioVal,
         nomeUsuario: nomeVal,
-        email: state.emailLogado || "thiagowillames99@gmail.com", // Associa ao e-mail ativo ou cria fallback padrão
+        email: state.emailLogado || "thiagowillames99@gmail.com",
         telefone: telefoneVal,
-        status: "Pendente" // Começa como Pendente para o Admin aprovar!
+        status: "Pendente"
     };
 
     reservas.push(novaReserva);
@@ -672,7 +529,7 @@ function renderUserReservations() {
 
     // Filtra reservas pelo e-mail do cliente logado
     const reservasUsuario = reservas.filter(r => r.email === emailLogado);
-    
+
     // Ordenar pela data
     const reservasOrdenadas = [...reservasUsuario].sort((a, b) => new Date(a.data) - new Date(b.data));
 
@@ -709,7 +566,7 @@ function renderUserReservations() {
         }
 
         const isCancelavel = r.status !== "Cancelada" && r.status !== "Rejeitada" && r.status !== "Bloqueada";
-        
+
         let acoesHtml = "";
         if (isCancelavel) {
             // Ações: Cancelar e, se estiver Pendente, botão Pagar!
@@ -738,7 +595,7 @@ function renderUserReservations() {
 }
 
 // Cancelamento pelo usuário
-window.cancelarReservaUsuario = function(reservaId) {
+window.cancelarReservaUsuario = function (reservaId) {
     showModal("danger", "Confirmar Cancelamento", "Tem certeza que deseja cancelar esta reserva? Esta ação não pode ser desfeita.", () => {
         const reservas = state.getReservas();
         const reserva = reservas.find(r => r.id === reservaId);
@@ -757,17 +614,17 @@ const modalPixConfirmBtn = document.getElementById("modal-pix-confirm-btn");
 const modalPixCloseBtn = document.getElementById("modal-pix-close-btn");
 let idReservaSendoPaga = null;
 
-window.fazerPagamento = function(reservaId) {
+window.fazerPagamento = function (reservaId) {
     idReservaSendoPaga = reservaId;
     modalPix.classList.add("active");
 };
 
-window.copiarChavePix = function() {
+window.copiarChavePix = function () {
     const pixKeyInput = document.getElementById("pix-key-input");
     pixKeyInput.select();
     pixKeyInput.setSelectionRange(0, 99999); /* Para mobile */
     navigator.clipboard.writeText(pixKeyInput.value);
-    
+
     showModal("success", "Pix Copiado", "Código Pix Copia e Cola copiado com sucesso para a área de transferência.");
 };
 
@@ -799,7 +656,7 @@ function renderAdminDashboard() {
     const tableBody = document.getElementById("admin-table-body");
     const metricReservasDia = document.getElementById("metric-reservas-dia");
     const metricQuadrasAtivas = document.getElementById("metric-quadras-ativas");
-    
+
     const reservas = state.getReservas();
     const quadras = state.getQuadras();
 
@@ -807,15 +664,15 @@ function renderAdminDashboard() {
     // Contar reservas ativas de hoje (24/05/2025 para bater com wireframe ou do dia atual)
     const hojeData = "2025-05-24";
     const reservasDeHoje = reservas.filter(r => r.data === hojeData && r.status !== "Cancelada");
-    
+
     // O total exibido na imagem é 8. Mostramos o número real baseado nas reservas de 24/05/2025 no banco.
     metricReservasDia.textContent = reservasDeHoje.length;
-    metricQuadrasAtivas.textContent = quadras.length; // 6 quadras ativas
+    metricQuadrasAtivas.textContent = 1; // Apenas 1 quadra ativa (Quadra Mariano)
 
     // 2. Renderizar Tabela de Reservas de "Hoje" (24/05/2025)
     // Filtramos apenas as reservas do dia 24/05/2025
     const listaReservasAdmin = reservas.filter(r => r.data === hojeData);
-    
+
     // Ordenar por hora
     listaReservasAdmin.sort((a, b) => a.horario.localeCompare(b.horario));
 
@@ -903,7 +760,7 @@ function renderAdminDashboard() {
 }
 
 // Ações do administrador
-window.adminAprovarReserva = function(reservaId) {
+window.adminAprovarReserva = function (reservaId) {
     const reservas = state.getReservas();
     const r = reservas.find(item => item.id === reservaId);
     if (r) {
@@ -914,7 +771,7 @@ window.adminAprovarReserva = function(reservaId) {
     }
 };
 
-window.adminRejeitarReserva = function(reservaId) {
+window.adminRejeitarReserva = function (reservaId) {
     showModal("danger", "Rejeitar Reserva", "Tem certeza que deseja cancelar/rejeitar esta reserva?", () => {
         const reservas = state.getReservas();
         const r = reservas.find(item => item.id === reservaId);
@@ -927,7 +784,7 @@ window.adminRejeitarReserva = function(reservaId) {
     }, true);
 };
 
-window.adminBloquearReserva = function(reservaId) {
+window.adminBloquearReserva = function (reservaId) {
     showModal("danger", "Bloquear Horário", "Deseja bloquear este horário para manutenção ou uso interno?", () => {
         const reservas = state.getReservas();
         const r = reservas.find(item => item.id === reservaId);
@@ -943,17 +800,13 @@ window.adminBloquearReserva = function(reservaId) {
 };
 
 // Botões do rodapé administrativo
-document.getElementById("btn-gerenciar-quadras").addEventListener("click", () => {
-    showModal("success", "Gerenciar Quadras", "Interface de gerenciamento de quadras (Nova quadra, edição) simulada. Todos os dados das quadras estão na variável QUADRAS_PADRAO no arquivo app.js.");
-});
-
 document.getElementById("btn-bloquear-horario").addEventListener("click", () => {
     // Bloquear um horário novo diretamente no admin
     const reservas = state.getReservas();
     const novoBloqueio = {
         id: "bloqueio-" + Date.now(),
-        quadraId: "quadra-1",
-        quadraNome: "Quadra 1 - Futsal",
+        quadraId: "quadra-mariano",
+        quadraNome: "Quadra Mariano - Futsal",
         data: "2025-05-24",
         horario: "11:00 - 12:00",
         nomeUsuario: "BLOQUEADO (Administrativo)",
@@ -963,7 +816,7 @@ document.getElementById("btn-bloquear-horario").addEventListener("click", () => 
     reservas.push(novoBloqueio);
     state.saveReservas(reservas);
     renderAdminDashboard();
-    showModal("success", "Horário Bloqueado", "O horário das 11:00 - 12:00 na Quadra 1 foi bloqueado com sucesso.");
+    showModal("success", "Horário Bloqueado", "O horário das 11:00 - 12:00 na Quadra Mariano foi bloqueado com sucesso.");
 });
 
 document.getElementById("btn-relatorios").addEventListener("click", () => {
@@ -1030,20 +883,20 @@ document.addEventListener("DOMContentLoaded", () => {
     // Toggle menu mobile
     const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
     const navLinks = document.querySelector(".nav-links");
-    
+
     if (mobileMenuToggle && navLinks) {
         mobileMenuToggle.addEventListener("click", (e) => {
             e.stopPropagation();
             navLinks.classList.toggle("open");
         });
-        
+
         // Fechar menu ao clicar fora
         document.addEventListener("click", (e) => {
             if (!navLinks.contains(e.target) && e.target !== mobileMenuToggle && !mobileMenuToggle.contains(e.target)) {
                 navLinks.classList.remove("open");
             }
         });
-        
+
         // Fechar menu ao clicar em algum link
         navLinks.querySelectorAll(".nav-item").forEach(item => {
             item.addEventListener("click", () => {
