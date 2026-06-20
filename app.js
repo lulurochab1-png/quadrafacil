@@ -20,7 +20,7 @@ const QUADRAS_PADRAO = [
         id: "quadra-mariano",
         nome: "Quadra Mariano",
         status: "Disponível",
-        imagem: "imagem do mariano na primeira tela(1).png"
+        imagem: "./mariano.png.png"
     }
 ];
 
@@ -432,7 +432,7 @@ function updateBookingSummary() {
     const telefoneVal = bookingTelefoneInput.value || "(93) 991087098";
 
     // Sempre carregar a imagem do Mariano no resumo
-    summaryImg.src = "imagem do mariano na primeira tela(1).png";
+summaryImg.src = "./mariano.png.png";
     summaryQuadra.textContent = `Quadra Mariano - ${modalidadeVal}`;
 
     // Formatar data para exibição PT-BR
