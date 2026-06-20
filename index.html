@@ -43,7 +43,6 @@
                 </button>
                 <ul class="nav-links">
                     <li><a href="#" class="nav-item active" data-view="home">Início</a></li>
-                    <li><a href="#" class="nav-item" data-view="quadras">Quadras</a></li>
                     <li><a href="#" class="nav-item" data-view="agendamento">Agendamento</a></li>
                     <li><a href="#" class="nav-item" data-view="reservas">Minhas Reservas</a></li>
                     <li><a href="#" class="nav-item" data-view="admin">Admin</a></li>
@@ -104,10 +103,8 @@
                     </div>
 
                     <div class="hero-image-wrapper">
-                        <!-- Imagem bonita de uma quadra poliesportiva (estilo a da imagem do usuário) -->
-                        <img class="hero-image"
-                            src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&q=80&w=1200"
-                            alt="Quadra Poliesportiva Azul">
+                        <!-- Imagem do Mariano na primeira tela -->
+                        <img class="hero-image" src="imagem do mariano na primeira tela(1).png" alt="Quadra Mariano">
                         <div class="hero-image-overlay"></div>
                     </div>
                 </div>
@@ -171,53 +168,6 @@
             </div>
         </section>
 
-        <!-- TELA 2: QUADRAS DISPONÍVEIS -->
-        <section id="section-quadras" class="view-section">
-            <div class="container">
-                <h1 class="section-header-title">Quadras disponíveis</h1>
-                <p class="section-header-desc">Encontre a quadra ideal para o seu jogo</p>
-
-                <!-- Barra de Filtros -->
-                <div class="filter-bar">
-                    <form class="filter-form" id="filter-form">
-                        <div class="filter-group">
-                            <label class="filter-label" for="filter-modalidade">Modalidade</label>
-                            <select class="filter-input" id="filter-modalidade">
-                                <option value="Todas">Todas</option>
-                                <option value="Futsal">Futsal</option>
-                                <option value="Vôlei">Vôlei</option>
-                                <option value="Basquete">Basquete</option>
-                                <option value="Futebol Society">Futebol Society</option>
-                                <option value="Beach Tennis">Beach Tennis</option>
-                                <option value="Poliesportiva">Poliesportiva</option>
-                            </select>
-                        </div>
-
-                        <div class="filter-group">
-                            <label class="filter-label" for="filter-data">Data</label>
-                            <input type="date" class="filter-input" id="filter-data" value="2025-05-24">
-                        </div>
-
-                        <div class="filter-group">
-                            <label class="filter-label" for="filter-local">Local</label>
-                            <select class="filter-input" id="filter-local">
-                                <option value="Todas">Todas</option>
-                                <option value="Quadra Coberta">Quadra Coberta</option>
-                                <option value="Quadra Externa">Quadra Externa</option>
-                                <option value="Quadra de Areia">Quadra de Areia</option>
-                            </select>
-                        </div>
-
-                        <button type="submit" class="filter-submit-btn">Filtrar</button>
-                    </form>
-                </div>
-
-                <!-- Grid de Quadras (Renderizado dinamicamente pelo JS) -->
-                <div class="courts-grid" id="courts-grid-container">
-                    <!-- Cards de Quadra vão aqui -->
-                </div>
-            </div>
-        </section>
 
         <!-- TELA 3: AGENDAMENTO -->
         <section id="section-agendamento" class="view-section">
@@ -225,14 +175,23 @@
                 <div class="booking-layout">
                     <!-- Form de Agendamento -->
                     <div class="booking-card">
-                        <h2 class="booking-title">Escolha a quadra e o horário</h2>
+                        <h2 class="booking-title">Escolha o horário e modalidade</h2>
 
                         <form id="booking-form" class="form-grid">
-                            <div class="form-group">
-                                <label class="form-label" for="booking-quadra">Quadra</label>
-                                <select class="form-input" id="booking-quadra">
-                                    <!-- Preenchido via JS -->
-                                </select>
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <label class="form-label" for="booking-quadra-disabled">Quadra</label>
+                                    <input type="text" class="form-input" id="booking-quadra-disabled"
+                                        value="Quadra Mariano" readonly
+                                        style="background-color: var(--bg-inactive); cursor: not-allowed; font-weight: 500;">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="booking-modalidade">Modalidade</label>
+                                    <select class="form-input" id="booking-modalidade">
+                                        <option value="Futsal">Futsal</option>
+                                        <option value="Vôlei">Vôlei</option>
+                                    </select>
+                                </div>
                             </div>
 
                             <div class="form-group-row">
@@ -437,8 +396,6 @@
                     <!-- Botões de Controle Inferiores -->
                     <div class="admin-bottom-bar">
                         <div class="admin-button-group">
-                            <button class="admin-control-btn manage-courts" id="btn-gerenciar-quadras">Gerenciar
-                                Quadras</button>
                             <button class="admin-control-btn block-time" id="btn-bloquear-horario">Bloquear
                                 Horário</button>
                             <button class="admin-control-btn reports" id="btn-relatorios">Relatórios</button>
