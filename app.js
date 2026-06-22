@@ -432,7 +432,7 @@ function updateBookingSummary() {
     const telefoneVal = bookingTelefoneInput.value || "(93) 991087098";
 
     // Sempre carregar a imagem do Mariano no resumo
-summaryImg.src = "./mariano.png.png";
+summaryImg.src = "./mariano.png.jpeg";
     summaryQuadra.textContent = `Quadra Mariano - ${modalidadeVal}`;
 
     // Formatar data para exibição PT-BR
