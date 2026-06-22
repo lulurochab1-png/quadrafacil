@@ -20,7 +20,7 @@ const QUADRAS_PADRAO = [
         id: "quadra-mariano",
         nome: "Quadra Mariano",
         status: "Disponível",
-        imagem: "./mariano.png.png"
+        imagem: "./mariano.png.jpeg"
     }
 ];
 
